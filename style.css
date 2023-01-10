@@ -1,0 +1,358 @@
+/*  ---   UNIVERSAL   ---  */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+:root {
+    --background-yellow: #EAC926;
+    --darkblue: #03264C;
+    --lightblue: #1259c3;
+    --darkgrey: #666;
+    --lightgrey: #ebebeb;
+    --green: #39b54a;
+    --text: 0.75rem;
+    --titulares: 1.5rem;
+    --price: 1.125rem;
+    --discount-descriptions: 1rem;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: var(--darkblue);
+    background-color: #ebebeb;
+}
+
+/* main {
+    width: 90%;
+}
+no se xq puse 90% con 100% queda mejor
+ */
+
+
+/* ---   HEADER   --- */
+
+.header {
+    background-color: var(--background-yellow)
+}
+
+
+
+/* ---   LOGO & SEARCH BOX   --- */
+
+.box-content {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.box-header {
+    padding: 16px;
+    width: 50%;
+}
+
+.search {
+    display: flex;
+}
+
+.ml-search {
+    outline: none;
+    padding: 8px 0 8px 8px;
+    border: transparent;
+    width: 100%;
+    height: 32px;
+    border-radius: 10px 0px 0px 10px;
+}
+
+.btn-search {
+    padding: 3px 3px 3px 0;
+    height: 32px;
+    border: #fff;
+    border-radius: 0px 10px 10px 0px;
+}
+
+.search-icon {
+    color: var(--darkgrey);
+}
+
+
+/*  ---   REMOVE X FROM INPUT SEARCH   ---  */
+
+input[type="search"]::-webkit-search-cancel-button {
+  -webkit-appearance:none;
+}
+
+
+/*  ---   DOLLAR HAND   ---  */
+
+.box-buy-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 8px 0 3px 0;
+}
+
+/*  ---   BURGUER MENU ICON ---  */
+
+.burguer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 16px 0 16px 0;
+}
+
+.burguer-btn {
+    border: none;
+    background-color: transparent;
+}
+
+.burguer-btn:hover {
+    cursor: pointer;
+}
+
+.burguer-menu {
+    color: #fff;
+    font-size: 1.5rem;
+    padding: 13px;
+    border-radius: 5px;
+    background-color: var(--lightblue);
+}
+
+/*  ---   NAV MENU   ---   */
+
+.nav-menu {
+    margin-bottom: 32px;
+}
+
+.nav-link {
+    color: var(--darkblue);
+}
+
+
+/* NAV BAR */
+
+.nav-container {
+    display: none;
+}
+
+/*  ---   BANNER   ---  */
+
+.ml-banner {
+    width: 100vw;
+}
+
+.title-cardbox {
+    color: var(--darkgrey);
+    font-size: var(--titulares);
+    margin: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/*  ---  MAIN  & CARDS  ---   */
+
+.card-box {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+}
+
+/*   ---  CARD ---  */
+
+.card {
+    margin: 16px;
+    width: 60vw;
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    border-radius: 10px;
+}
+
+.product-img {
+    width: 60vw;
+}
+
+
+/*   ---  ICON BOX  ---   */
+
+.white {
+    background-color: #fff;
+}
+
+.truck-box {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding: 16px;
+}
+
+.truck-icon {
+    color: var(--green);
+    border: 1px solid #44b041;
+    padding: 8px 5px;
+    border-radius: 50px;
+    font-size: 1.2rem;
+}
+
+.truck-icon:hover {
+    cursor: pointer;
+}
+
+/*   ---  PRICE & DISCOUNT BOX  ---   */
+
+.price-discount {
+    display: flex;
+    padding: 8px 16px;
+    align-items: center;
+}
+
+
+/*   ---  PRICE  ---  */
+
+.price-box {
+    width: 25vw;
+}
+
+.price {
+    font-size: var(--price);
+}
+
+
+/*   ---  DISCOUNT  ---  */
+
+.discount-box {
+    width: 75vw;
+}
+
+.discount {
+    font-size: var(--discount-descriptions);
+    color: var(--green);
+    font-weight: 500;
+}
+
+/*   ---  PRODUCT NAME  --- */
+
+.product-name {
+    padding: 8px 16px 20px;
+    color: var(--darkgrey);
+    font-weight: 500;
+}
+
+
+/*  ---   FOOTER   ---  */
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.footer-info {
+    margin: 32px 16px;
+}
+
+.footer-icon {
+    font-size: 3rem;
+    color: var(--lightblue);
+    margin-bottom: 16px;
+}
+
+.titulares {
+    font-size: var(--discount-descriptions);
+    color: var(--darkgrey);
+    font-weight: 600;
+}
+
+.text {
+    font-size: var(--discount-descriptions);
+    color: var(--darkgrey);
+}
+
+.copyright {
+    color: var(--darkgrey);
+}
+
+
+/* ### MEDIA QUERYS ### */
+
+/* MOBILE Y TABLET*/
+@media (max-width: 777px) { 
+    .nav-link {
+        font-size: .9rem;
+    }
+}
+
+
+/* TABLET & NOTEBOOK */
+@media (min-width: 769px) { 
+    .heder-section {
+        display: flex;
+    }
+    
+    .box-content {
+        width: 50%;
+    }
+
+    .box-buy-text {
+        width: 50%;
+        margin: 0;
+        display: flex;
+        justify-content: flex-end;
+        padding-right: 40px;
+    }
+
+    .burguer {
+        display: none;
+    }
+
+    .nav-container {
+        padding: 0 16px;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .nav-menu {
+        width: 50%;
+        display: flex;
+    }
+
+    .menu-right {
+        justify-content: flex-end;
+    }
+
+    .nav-item {
+        list-style-type: none;
+    }
+
+    .nav-link {
+        margin-right: 20px;
+    }
+
+    /* SECTION LAST VISIT */
+        .card {
+            width: 40%;
+        }
+
+        .product-img {
+            width: 100%;
+        }
+
+}
+
+
+/* DESKTOP*/
+@media (min-width: 1200px) { 
+    .card {
+        width: 20%;
+    }
+}
