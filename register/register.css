@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+:root {
+    --lightblue: #1259c3;
+    --darkgrey: #666;
+    --lightgrey: #ebebeb;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    padding: 25px 0 50px;
+}
+
+fieldset {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: center;
+    margin: 30px 0;
+    border-color: var(--darkgrey);
+    color: var(--lightblue);
+}
+
+fieldset:hover {
+    border-color: var(--lightblue);
+}
+
+legend {
+    margin-bottom: 0px;
+    margin-left: 5px;
+    padding: 0px 10px;
+}
+
+form {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    padding: 30px 0;
+}
+
+/* -- INFO USUARIO: NAME, USER NAME, EMAIL, PASSWORD -- */
+
+main fieldset form section {
+    margin-bottom: 50px;
+}
+
+input {
+    padding: 20px;
+    width: 80%;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+}
+
+main fieldset form section article {
+    display: flex;
+    align-items: center;
+}
+
+.form-to-complete {
+    width: 100%;
+    color: var(--darkgrey);
+    background-color: #fff;
+    border: transparent;
+}
+
+.user-info input:focus {
+    outline-color: var(--lightblue);
+}
+
+.form-to-complete--bottom {
+    margin-bottom: 40px;
+}
+
+.form-buyer-seller { 
+    display: flex;
+    margin-top: 20px;
+    margin-right: 10px;
+}
+
+.form-buyer-seller, .interests-select {
+    color: var(--darkgrey);
+    font-weight: 600;
+}
+
+main fieldset form section article div input {
+    margin-right: 10px;
+}
+
+.interests {
+    margin-top: 20px;
+    flex-direction: column ;
+}
+
+.interests-select {
+    display: flex;
+    align-self: baseline;
+    margin-bottom: 20px;
+}
+
+.form-to-complete--checkbox, .form-to-complete--bs {
+    margin-bottom: 0;
+}
+
+/* --  RESET AND SUBMIT BUTTONS -- */
+
+.form-box {
+    display: flex;
+}
+
+.form-btn-rs {
+    background-color: var(--lightblue);
+    color: #fff;
+    border: var(--lightblue);
+    box-shadow: 0px 3px 5px 0px rgba(16,78,171,0.56);
+}
+
+.form-btn-rs--right {
+    margin-right: 10px;
+}
+
+/* ###  MEDIA QUERYS  ### */
+
+/* TABLET & NOTEBOOK */
+@media (min-width: 769px) {
+    fieldset {
+        width: 60%;
+    }
+}
+
+/* DESKTOP*/
+@media (min-width: 1200px) {
+    fieldset {
+        width: 35%;
+    }
+
+    .form-btn-rs:hover {
+        background-color: #2d6ac4;
+        cursor: pointer;
+    }
+}

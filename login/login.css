@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+:root {
+    --lightgrey: #ebebeb;
+    --lightblue: #1259c3;
+    --darkgrey: #666;
+}
+
+main {
+    /* background-color: var(--lightgrey); */
+    padding-bottom: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 0;
+}
+
+input {
+    padding: 20px;
+    width: 80%;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.form-to-complete  {
+    margin-bottom: 40px;
+    color: var(--darkgrey);
+    background-color: #fff;
+    border: transparent;
+}
+
+.form-btn-submit {
+    background-color: var(--lightblue);
+    color: #fff;
+    border: var(--lightblue);
+    box-shadow: 0px 3px 5px 0px rgba(16,78,171,0.56);
+}
+
+
+
+
+/* TABLET & NOTEBOOK */
+@media (min-width: 769px) {
+    main {
+        justify-content: center;
+        align-items: center;
+        flex-grow: 1; 
+    }
+
+    input {
+        width: 50%;
+    }
+
+    .form-btn-submit {
+        width: 25%;
+    }
+}
+
+/* DESKTOP*/
+@media (min-width: 1200px) {
+    input, .form-btn-submit {
+        width: 20%;
+    }
+
+    input:focus {
+        outline-color: var(--darkgrey);
+    }
+
+    .form-btn-submit:hover {
+        background-color: #2d6ac4;
+        cursor: pointer;
+    }
+}
+

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mercado Liebre</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="./register.css">
+    <!-- Icons Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous"
+    referrerpolicy="no-referrer"/>
+</head>
+<body>
+    <header class="header">
+        <section class="heder-section">
+            <section class="box-content">
+                <div class="box-header">
+                    <a href="../index.html"><img class="ml-logo" src="../images/logo-mercado-liebre.svg" alt="logo mercado liebre"></a>
+                </div>
+                <div class="box-header search">
+                    <input class="ml-search" type="search" autofocus placeholder="Buscas productos, marcas ...">
+                    <button class="btn-search"><i class="fa fa-magnifying-glass search-icon"></i></button>
+                </div>
+            </section>
+            <div class="box-buy-text">
+                <i class="fa-solid fa-hand-holding-dollar hand-dollar"></i>
+                <p class="ml-header-description">Comprá en cuotas y sin tarjeta de crédito</p>
+            </div>
+        </section>
+        <div class="burguer">
+            <button class="burguer-btn"><i class="fa-solid fa-bars burguer-menu"></i></button>
+        </div>
+        <nav class="nav-container">
+            <ul class="nav-menu">
+                <li class="nav-item"><a class="nav-link" href="#">Ofertas</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Tiendas oficiales</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Vender</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Ayuda</a></li>
+            </ul>
+            <ul class="nav-menu menu-right">
+                <li class="nav-item"><a class="nav-link" href="./register.html">Creá tu cuenta <i class="fa-regular fa-id-card"></i></a></li>
+                <li class="nav-item"><a class="nav-link" href="../login/login.html">Ingresá <i class="fa-solid fa-right-to-bracket"></i></a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Mis compras <i class="fa-solid fa-basket-shopping"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <fieldset>
+            <legend>Datos del usuario</legend>
+            <form>
+                <!-- INFO USUARIO: NAME, USER NAME, EMAIL, PASSWORD -->
+                <section class="user-info">
+                    <!-- NAME & LASTNAME-->
+                    <input class="form-to-complete form-to-complete--bottom" type="text" name="name-lastname" id="name-lastname" placeholder="Nombre y apellido" required>
+                    <!-- USER NAME -->
+                    <input class="form-to-complete form-to-complete--bottom" type="text" name="user-name" id="user-name" placeholder="Nombre de usuario" required>
+                    <!-- EMAIL -->
+                    <input class="form-to-complete form-to-complete--bottom" type="email" id="email" name="email" placeholder="Email" required>
+                    <!-- PASSWORD -->
+                    <input class="form-to-complete form-to-complete--bottom" type="password" name="password" id="password" placeholder="Elegí tu contraseña" required>
+                    <input class="form-to-complete" type="password" name="confirm-password" id="confirm-password" placeholder="Confirmar contraseña" required>
+                </section>
+                <!-- DATE BIRTH, ADDRESS -->
+                <section class="user-info">
+                    <!-- DATE BIRTH -->
+                    <p>Fecha de nacimiento</p>
+                    <input class="form-to-complete form-to-complete--bottom" type="date" name="date-birth" required>
+                    <!-- ADDRESS -->
+                    <input class="form-to-complete" type="text" name="address" id="address" placeholder="Domicilio" required>
+                </section>
+                <!-- PROFILE PHOTO -->
+                <section>
+                    <p>Foto de perfil</p>
+                    <input class="form-to-complete" type="file" name="profile-photo">
+                </section>
+                <!-- PERFIL DE USUARIO -->
+                <!-- BUY OR SELLER -->
+                <section>
+                    <p>Perfil del usuario</p>
+                    <article>
+                        <div class="form-buyer-seller">
+                            <input class="form-to-complete" type="radio" name="buyer-seller"  value="Comprador" required>Comprador
+                        </div>
+                        <div class="form-buyer-seller">
+                            <input class="form-to-complete" type="radio" name="buyer-seller" value="Vendedor" required>Vendedor
+                        </div>
+                    </article>
+                </section>
+                <!-- INTERESTS -->
+                <section>
+                    <p>Intereses</p>
+                    <article class="interests">
+                        <div class="interests-select">
+                            <input class="form-to-complete" type="checkbox" name="personal-interests" value="Electro">Electro
+                        </div>
+                        <div class="interests-select">
+                            <input class="form-to-complete" type="checkbox" name="personal-interests" value="Moda">Moda
+                        </div>
+                        <div class="interests-select">
+                            <input class="form-to-complete" type="checkbox" name="personal-interests" value="Hogar">Hogar
+                        </div>
+                        <div class="interests-select">
+                            <input class="form-to-complete" type="checkbox" name="personal-interests" value="Juguetería">Juguetería
+                        </div>
+                        <div class="interests-select">
+                            <input class="form-to-complete" type="checkbox" name="personal-interests" value="Belleza">Belleza
+                        </div>
+                    </article>
+                </section>
+                <!--  RESET AND SUBMIT BUTTONS -->
+                <section class="form-box">
+                    <input class="form-btn-rs form-btn-rs--right" type="reset" value="Reset">
+                    <input class="form-btn-rs" type="submit" value="Submit">
+                </section>
+            </form>
+        </fieldset>
+    </main>
+    <footer class="footer">
+        <article class="footer-content">
+            <section id="pay" class="footer-info">
+                <i class="fa-solid fa-credit-card footer-icon"></i>
+                <p class="titulares">Pagá con tarjeta o en efectivo</p>
+                <p class="text">Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en
+                    puntos detitulareso. ¡Y siempre es seguro!
+                </p>
+            </section>
+            <section id="shipping" class="footer-info">
+                <i class="fa-solid fa-gift footer-icon"></i>
+                <p class="titulares">Envío gratis desde $ 2.500</p>
+                <p class="text">Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de
+                    productos. Es un beneficio de Mercado Puntos.
+                </p>
+            </section>
+            <section id="security" class="footer-info">
+                <i class="fa-solid fa-user-shield footer-icon"></i>
+                <p class="titulares">Seguridad, de principio a fin</p>
+                <p class="text">¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer,
+                    porque estás siempre protegid@.
+                </p>
+            </section>
+        </article>
+        <section class="copyright-box">
+            <p class="copyright">Copyright © 1999-2020 MercadoLiebre S.R.L</p>
+        </section>
+    </footer>
+</body>
