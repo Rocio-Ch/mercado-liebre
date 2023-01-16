@@ -87,6 +87,7 @@ main fieldset form section article {
 }
 
 .form-buyer-seller, .interests-select {
+    flex-direction: row-reverse;
     color: var(--darkgrey);
     font-weight: 600;
 }
