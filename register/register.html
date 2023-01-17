@@ -48,11 +48,11 @@
     <main>
         <fieldset>
             <legend>Datos del usuario</legend>
-            <form>
+            <form id="form">
                 <!-- INFO USUARIO: NAME, USER NAME, EMAIL, PASSWORD -->
                 <section class="user-info">
                     <!-- NAME & LASTNAME-->
-                    <input class="form-to-complete form-to-complete--bottom" type="text" name="name-lastname" id="name-lastname" placeholder="Nombre y apellido" required>
+                    <input class="form-to-complete form-to-complete--bottom" type="text" name="name-lastname" id="name-lastname" placeholder="Nombre y apellido" required autofocus>
                     <!-- USER NAME -->
                     <input class="form-to-complete form-to-complete--bottom" type="text" name="user-name" id="user-name" placeholder="Nombre de usuario" required>
                     <!-- EMAIL -->
@@ -95,30 +95,30 @@
                     <article class="interests">
                         <div class="interests-select">
                             <label for="electro">Electro</label>
-                            <input class="form-to-complete" type="checkbox" name="electro" value="Electro">
+                            <input class="form-to-complete" type="checkbox" name="electro" value="Electro" id="electro">
                         </div>
                         <div class="interests-select">
                             <label for="fashion">Moda</label>
-                            <input class="form-to-complete" type="checkbox" name="fashion" value="Moda">
+                            <input class="form-to-complete" type="checkbox" name="fashion" value="Moda" id="fashion">
                         </div>
                         <div class="interests-select">
                             <label for="home">Hogar</label>
-                            <input class="form-to-complete" type="checkbox" name="home" value="Hogar">
+                            <input class="form-to-complete" type="checkbox" name="home" value="Hogar" id="home">
                         </div>
                         <div class="interests-select">
                             <label for="toy-store">Juguetería</label>
-                            <input class="form-to-complete" type="checkbox" name="toy-store" value="Juguetería">
+                            <input class="form-to-complete" type="checkbox" name="toy-store" value="Juguetería" id="toy-store">
                         </div>
                         <div class="interests-select">
                             <label for="beauty">Belleza</label>
-                            <input class="form-to-complete" type="checkbox" name="beauty" value="Belleza">
+                            <input class="form-to-complete" type="checkbox" name="beauty" value="Belleza" id="beauty">
                         </div>
                     </article>
                 </section>
                 <!--  RESET AND SUBMIT BUTTONS -->
                 <section class="form-box">
-                    <input class="form-btn-rs form-btn-rs--right" type="reset" value="Reset">
-                    <input class="form-btn-rs" type="submit" value="Submit">
+                    <input class="form-btn-rs form-btn-rs--right" type="reset" value="Borrar">
+                    <a href="../index.html" class="to-home"><input class="form-btn-rs" type="submit" value="Enviar"></a>
                 </section>
             </form>
         </fieldset>

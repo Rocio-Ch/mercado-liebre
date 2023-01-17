@@ -115,17 +115,24 @@ main fieldset form section article div input {
 
 .form-box {
     display: flex;
+    justify-content: space-around;
 }
 
-.form-btn-rs {
+.form-btn-rs, .to-home {
     background-color: var(--lightblue);
     color: #fff;
     border: var(--lightblue);
     box-shadow: 0px 3px 5px 0px rgba(16,78,171,0.56);
+    width: 100%;
+}
+
+.to-home {
+    width: 45%;
+    border-radius: 5px;
 }
 
 .form-btn-rs--right {
-    margin-right: 10px;
+    width: 45%;
 }
 
 /* ###  MEDIA QUERYS  ### */
