@@ -7,6 +7,8 @@
     <title>Mercado Liebre</title>
     <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="./login.css">
+    <!-- Favicon Mercado Liebre -->
+    <link rel="shortcut icon" href="../images/mercado-liebre-hands.png" type="image/x-icon">
     <!-- Icons Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous"
     referrerpolicy="no-referrer"/>
@@ -33,20 +35,20 @@
         </div>
         <nav class="nav-container">
             <ul class="nav-menu">
-                <li class="nav-item"><a class="nav-link" href="#">Ofertas</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Tiendas oficiales</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Vender</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Ayuda</a></li>
+                <li class="nav-item nav-item--right"><a class="nav-link" href="#">Ofertas</a></li>
+                <li class="nav-item nav-item--right"><a class="nav-link" href="#">Tiendas oficiales</a></li>
+                <li class="nav-item nav-item--right"><a class="nav-link" href="#">Vender</a></li>
+                <li class="nav-item nav-item--right"><a class="nav-link" href="#">Ayuda</a></li>
             </ul>
             <ul class="nav-menu menu-right">
-                <li class="nav-item"><a class="nav-link" href="../register/register.html">Creá tu cuenta <i class="fa-regular fa-id-card"></i></a></li>
-                <li class="nav-item"><a class="nav-link" href="./login.html">Ingresá <i class="fa-solid fa-right-to-bracket"></i></a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Mis compras <i class="fa-solid fa-basket-shopping"></i></a></li>
+                <li class="nav-item nav-item--left"><a class="nav-link" href="../register/register.html">Creá tu cuenta <i class="fa-regular fa-id-card"></i></a></li>
+                <li class="nav-item nav-item--left"><a class="nav-link" href="./login.html">Ingresá <i class="fa-solid fa-right-to-bracket"></i></a></li>
+                <li class="nav-item nav-item--left"><a class="nav-link" href="#">Mis compras <i class="fa-solid fa-basket-shopping"></i></a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <form>
+        <form method="post" action="../index.html">
             <input class="form-to-complete" type="text" name="name" id="name" placeholder="Nombre de usuario">
             <input class="form-to-complete" type="password" name="password" id="password" placeholder="Contraseña">
             <input class="form-btn-submit" type="submit" value="Ingresar">
