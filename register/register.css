@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
 :root {
+    --btn-hover: #0022AA;
     --lightblue: #1259c3;
     --darkgrey: #666;
     --lightgrey: #ebebeb;
@@ -146,7 +147,7 @@ main fieldset form section article div input {
     }
 
     .form-btn-rs:hover {
-        background-color: #2d6ac4;
+        background-color: var(--btn-hover);
         cursor: pointer;
     }
 }

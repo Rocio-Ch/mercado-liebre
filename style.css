@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
 :root {
+    --btn-hover: #0022AA;
     --background-yellow: #eac926;
     --darkblue: #03264C;
     --lightblue: #1259c4;
@@ -405,6 +406,6 @@ input[type="search"]::-webkit-search-cancel-button {
     }
 
     .footer-info:hover .footer-icon {
-        color: var(--darkblue);
+        color: var(--btn-hover);
     }
 }

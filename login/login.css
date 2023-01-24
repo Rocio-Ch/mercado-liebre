@@ -4,6 +4,7 @@
     --lightgrey: #ebebeb;
     --lightblue: #1259c3;
     --darkgrey: #666;
+    --btn-hover: #0022AA;
 }
 
 main {
@@ -74,7 +75,7 @@ input {
     }
 
     .form-btn-submit:hover {
-        background-color: #2d6ac4;
+        background-color: var(--btn-hover);
         cursor: pointer;
     }
 }
