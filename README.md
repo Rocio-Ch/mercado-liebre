@@ -15,7 +15,7 @@ Mi nombre es Rocío Magalí Chaparro, estoy estudiando para convertirme en desar
 
 ### Descripción del proyecto
 
-Este proyecto en es una práctica que realicé en ADA ITW donde tuvimos que replicar Mercado Libre, con un html de login y registro. Cuenta con media queries por lo tanto es totalmente adaptativo para mobile, tablet y desktop.
+Este proyecto en es una práctica que realicé en ADA ITW donde tuvimos que replicar Mercado Libre, con un html de login y registro. Cuenta con 3 media queries por lo tanto es totalmente adaptativo para mobile, tablet y desktop.
 ***
 
 ### Herramientas utilizadas
